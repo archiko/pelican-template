@@ -40,7 +40,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 #DEFAULT_PAGINATION = 5
 
 FILENAME_METADATA = "(?P<title>)"
-STATIC_PATHS = ['images','extra']
+STATIC_PATHS = ['images','extra','extra/CNAME']
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/thumb.webp':{'path':'thumb.webp'},
