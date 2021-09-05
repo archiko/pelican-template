@@ -8,8 +8,8 @@ jika kamu ingin menggunakan ini sebagai standar tema buat situs kamu dengan peli
 Ini bukanlah tema dari sebuah ide desain dari imajinasi saya sendiri melainkan hasil kagebunshin atau cloning desain dari situs <a href="https://hiwijaya.com"> Hiwijaya</a>. Kalian bisa kunjungi situsnya.
 
 
-* Buy Me a Sate
-* https://trakteer.id/archiko
+## Buy Me a Sate
+<a href="https://trakteer.id/archiko">Click Here</a>
 
 
 
