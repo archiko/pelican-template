@@ -4,7 +4,6 @@ Tags: python, module
 Slug: blog/fungsi-eval-dan-risikonya-pada-python
 Author: Ardho Ainullah
 
-<img src="{{URLSITE}}/image/thumbnail/eval.webp" style="display:none">
 ```python
 eval(expression, globals=None, locals=None)
 ```
