@@ -102,5 +102,5 @@ tentu sangat berisiko tinggikan? apalagi program kita itu berbasis web seperti m
 
 
 
-okeh sekian dulu, semoga bermanfaat.
+oke mungkin segini dulu, semoga bermanfaat.
 
