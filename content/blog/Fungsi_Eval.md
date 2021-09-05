@@ -4,6 +4,7 @@ Tags: python, module
 Slug: blog/fungsi-eval-dan-risikonya-pada-python
 Author: Ardho Ainullah
 
+<img src="{{URLSITE}}/image/thumbnail/eval.webp" style="display:none">
 ```python
 eval(expression, globals=None, locals=None)
 ```
@@ -70,6 +71,7 @@ output
 2
 </code></pre>
 paham? pahamm lah masa gaa. jadi intinya dia itu bisa ngerubah sebuah string itu menjadi sintaks murni. 
+btw Saya juga pernah implementasikan eval ini ke program simple random quiz math buatan saya, bisa cek <a href="https://pastebin.com/ZepZcygQ">disini</a> untuk kodingannya.
 
 
 

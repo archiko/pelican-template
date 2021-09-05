@@ -14,6 +14,8 @@ Fungsi eval dan risikonya pada python
                 <link rel="stylesheet" href="/theme/css/style.css">
 		<link rel="stylesheet" href="/theme/css/default.min.css">
 		<link rel="stylesheet" href="/theme/css/nord.css">
+		<!-- Google Adsense-->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2149089797407520" crossorigin="anonymous"></script>
 
         </head>
 
@@ -45,6 +47,7 @@ Fungsi eval dan risikonya pada python
 </div><br>
 
 <div class="text-white">
+<p><img src="{{URLSITE}}/image/thumbnail/eval.webp" style="display:none"></p>
 <div class="highlight"><pre><span></span><code><span class="nb">eval</span><span class="p">(</span><span class="n">expression</span><span class="p">,</span> <span class="nb">globals</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">locals</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 </code></pre></div>
 
@@ -96,7 +99,8 @@ nilai a sama b ingin diapakan? +
 1+1
 2
 </code></pre>
-<p>paham? pahamm lah masa gaa. jadi intinya dia itu bisa ngerubah sebuah string itu menjadi sintaks murni. </p>
+<p>paham? pahamm lah masa gaa. jadi intinya dia itu bisa ngerubah sebuah string itu menjadi sintaks murni. 
+btw Saya juga pernah implementasikan eval ini ke program simple random quiz math buatan saya, bisa cek <a href="https://pastebin.com/ZepZcygQ">disini</a> untuk kodingannya.</p>
 <p>Risk/Risiko.</p>
 <p>Tapi fungsi ini kurang bagus untuk digunakan jika tidak dipenuhi dengan validasi input atau penanganan yang mumpuni, jadi saya contohin seperti dibawah ini.</p>
 <p>semisal dalam program kita itu ada module os yang sudah diimport, bisa saja user itu memasukan sebuah sintaks python untuk memanipulasi program yang sudah kita buat. </p>
