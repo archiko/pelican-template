@@ -1,6 +1,6 @@
 Title: Distributif Pada Perkalian
 Date: 2, sep 2021.
-Tags: math,
+Tags: math, perkalian
 Slug: blog/Distributif-Pada-Perkalian
 Author: Ardho Ainullah
 

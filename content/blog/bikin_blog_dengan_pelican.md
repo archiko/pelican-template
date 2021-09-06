@@ -1,6 +1,6 @@
 Title: Cara bikin blog digithub pages dengan pelican
 Date: 6, Sep 2021.
-Tags: python, pelican
+Tags: python, pelican, ssg
 Slug: blog/cara-bikin-blog-digithub-pages-dengan-pelican
 Author: Ardho Ainullah
 
