@@ -67,8 +67,8 @@ output
 1+1
 2
 </code></pre>
-paham? pahamm lah masa gaa. jadi intinya dia itu bisa ngerubah sebuah string itu menjadi sintaks murni. 
-btw Saya juga pernah implementasikan eval ini ke program simple random quiz math buatan saya, bisa cek <a href="https://pastebin.com/ZepZcygQ">disini</a> untuk kodingannya.
+paham? paham lah masa gaa. jadi intinya dia itu bisa ngerubah sebuah string itu menjadi sintaks murni. 
+btw Saya juga pernah implementasikan eval ini ke program simple random quiz math buatan saya, bisa cek <a href="https://pastebin.com/ZepZcygQ" style="color:#80ED99;">disini</a> untuk kodingannya.
 
 
 
