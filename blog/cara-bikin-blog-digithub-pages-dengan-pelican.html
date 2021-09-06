@@ -51,20 +51,20 @@ Cara bikin blog digithub pages dengan pelican
 <p>jika kita translate dalam bahasa indonesia ssg adalah "penghasil website statis"
 yang mana website statis ini tidak memerlukan database maupun server-side logic (backend) hanya didasari oleh html, css dan javascript. tentu ini akan membuat website kamu bakalan ngebut karena tidak terlalu banyak melakukan request ke backend. nah blog archiko ini sendiri juga dibuat dengan pelican. </p>
 <p>Kita masuk ke langkahnya</p>
-<h2>Buat repositori baru</h2>
-<p>Diakun github kalian buat satu repo yang sama dengan username kalian, diakhir dengan".github.io, seperti dibawah ini.</p>
+<h1>Buat repositori baru</h1>
+<p>Diakun github kalian buat satu repo yang sama dengan username kalian, diakhir dengan <strong>.github.io</strong>, seperti dibawah ini.</p>
 <pre><code class="plaintext">github.com/username/username.github.io</code></pre>
 
-<h2>Install pelican dan ghp-import</h2>
+<h1>Install pelican dan ghp-import</h1>
 <p>karena pelican merubah sebuah konten dari markdown menjadi html, kalian juga install Markdown. kita gunakan pip python untuk install nya :D</p>
 <pre><code class="shell">$ pip install pelican ghp-import Markdown</code></pre>
 
-<h2>kloning repositori dan buat project</h2>
+<h1>kloning repositori dan buat project</h1>
 <pre><code class="shell">$ git clone https://github.com/username/username.github.io blog
 $ cd blog
 </code></pre>
 
-<h2>Tips</h2>
+<h2>sebelum itu ada tips</h2>
 <p>karena nanti file-file konfigurasi pelican bakalan muncul dihalaman pengguna (direpositori username.github.io) dengan cabang <strong>master</strong>, kita bisa memilah nya menjadi dua cabang, untuk file-file konfigruasinya kita taruh dicabang baru dengan nama <strong>content</strong>. sedangkan untuk hasil konten web dari pelican kita taruh dicabang <strong>master</strong>.</p>
 <p>ini akan memudahkan kita nantinya jika ingin menghapus seluruh halaman/konten dalam websitenya karena hanya ada dicabang <strong>master</strong> dan kita bisa mengisinya lagi dari cabang <strong>content</strong>.</p>
 <p>paham? semoga....</p>
@@ -72,12 +72,11 @@ $ cd blog
 Switched to a new branch 'content'
 </code></pre>
 
-<h2>Pelican Quickstart</h2>
+<h1>Konfigurasi Pelican</h1>
 <p>Ditahap ini kita akan melakukan konfigurasi pelican.
 Untuk inisialisasi gunakan perintah <strong>pelican-quickstart</strong>.
 Nanti kalian disuruh menjawab serangkaian pertanyaan.</p>
-<pre><code class="shell">
-$ pelican-quickstart
+<pre><code class="shell">$ pelican-quickstart
 Welcome to pelican-quickstart v4.6.0.
 
 This script will help you create a new Pelican-based website.
@@ -103,7 +102,7 @@ needed by Pelican.
 > Do you want to upload your website using GitHub Pages? (y/N) y
 > Is this your personal page (username.github.io)? (y/N) y
 Done. Your new project is available at /root/blog
-<code></pre>
+</code></pre>
 
 <p>untuk bagian upload your site using github pages kalian pilih "y" karena dalam toturial ini kita bakalan hosting nya digithub.</p>
 <p>coba sekarang kalian lihat isi foldernya.</p>
@@ -111,7 +110,7 @@ Done. Your new project is available at /root/blog
 Makefile  content  output  pelicanconf.py  publishconf.py  tasks.py
 </code></pre>
 
-<h2>Push!</h2>
+<h1>Push!</h1>
 <p>Setalah file-file diatas sudah ada, kita push ke repositori yang dibuat tadi dengan cabang konten.</p>
 <pre><code class="shell">$ git add .
 $ git commit -m "-"
@@ -119,7 +118,7 @@ $ git push origin content
 </code</pre>
 Maap jika info commitnya hanya "-" karena saya bingung mau isi dengan apa 😆
 
-## Menambahkan sebuah postingan
+# Menambahkan sebuah postingan
 Yap disini kalian sudah bisa menambahkan artikel atau postingan.
 Ayo kita tambahkan 1 postingan 1 halaman untuk about.
 
@@ -145,7 +144,7 @@ nah sekarang kalian coba buka file **pages/about.md** dan tambahkan seperti diba
 <pre><code class="plaintext">Title: About
 Date: 24, sep 2027
 
-## About
+# About
 Hai nama gua hero dan terimakasih telah memberikan
 gua kesemepatan untuk menemani malam sedih mu.
 </code></pre>
@@ -173,7 +172,7 @@ $ git push origin content
 </code></pre>
 
 
-## Akhirnya ~
+# Akhirnya ~
 Sekarang halaman github pages kalian sudah siap untuk dikunjungi!
 <pre><code class="plaintext">https://username.github.io/
 </code></pre>
