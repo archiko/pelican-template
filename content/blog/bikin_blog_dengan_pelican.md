@@ -12,22 +12,22 @@ yang mana website statis ini tidak memerlukan database maupun server-side logic 
 
 Kita masuk ke langkahnya
 
-## Buat repositori baru
-Diakun github kalian buat satu repo yang sama dengan username kalian, diakhir dengan".github.io, seperti dibawah ini.
+# Buat repositori baru
+Diakun github kalian buat satu repo yang sama dengan username kalian, diakhir dengan **.github.io**, seperti dibawah ini.
 <pre><code class="plaintext">github.com/username/username.github.io</code></pre>
 
-## Install pelican dan ghp-import
+# Install pelican dan ghp-import
 karena pelican merubah sebuah konten dari markdown menjadi html, kalian juga install Markdown. kita gunakan pip python untuk install nya :D
 <pre><code class="shell">$ pip install pelican ghp-import Markdown</code></pre>
 
 
 
-## kloning repositori dan buat project
+# kloning repositori dan buat project
 <pre><code class="shell">$ git clone https://github.com/username/username.github.io blog
 $ cd blog
 </code></pre>
 
-## Tips
+## sebelum itu ada tips
 karena nanti file-file konfigurasi pelican bakalan muncul dihalaman pengguna (direpositori username.github.io) dengan cabang **master**, kita bisa memilah nya menjadi dua cabang, untuk file-file konfigruasinya kita taruh dicabang baru dengan nama **content**. sedangkan untuk hasil konten web dari pelican kita taruh dicabang **master**.
 
 ini akan memudahkan kita nantinya jika ingin menghapus seluruh halaman/konten dalam websitenya karena hanya ada dicabang **master** dan kita bisa mengisinya lagi dari cabang **content**.
@@ -40,13 +40,12 @@ Switched to a new branch 'content'
 </code></pre>
 
 
-## Pelican Quickstart 
+# Konfigurasi Pelican
 Ditahap ini kita akan melakukan konfigurasi pelican.
 Untuk inisialisasi gunakan perintah **pelican-quickstart**.
 Nanti kalian disuruh menjawab serangkaian pertanyaan.
 
-<pre><code class="shell">
-$ pelican-quickstart
+<pre><code class="shell">$ pelican-quickstart
 Welcome to pelican-quickstart v4.6.0.
 
 This script will help you create a new Pelican-based website.
@@ -72,8 +71,7 @@ needed by Pelican.
 > Do you want to upload your website using GitHub Pages? (y/N) y
 > Is this your personal page (username.github.io)? (y/N) y
 Done. Your new project is available at /root/blog
-<code></pre>
-
+</code></pre>
 
 untuk bagian upload your site using github pages kalian pilih "y" karena dalam toturial ini kita bakalan hosting nya digithub.
 
@@ -82,7 +80,7 @@ coba sekarang kalian lihat isi foldernya.
 Makefile  content  output  pelicanconf.py  publishconf.py  tasks.py
 </code></pre>
 
-## Push!
+# Push!
 Setalah file-file diatas sudah ada, kita push ke repositori yang dibuat tadi dengan cabang konten.
 <pre><code class="shell">$ git add .
 $ git commit -m "-"
@@ -90,7 +88,7 @@ $ git push origin content
 </code</pre>
 Maap jika info commitnya hanya "-" karena saya bingung mau isi dengan apa 😆
 
-## Menambahkan sebuah postingan
+# Menambahkan sebuah postingan
 Yap disini kalian sudah bisa menambahkan artikel atau postingan.
 Ayo kita tambahkan 1 postingan 1 halaman untuk about.
 
@@ -116,7 +114,7 @@ nah sekarang kalian coba buka file **pages/about.md** dan tambahkan seperti diba
 <pre><code class="plaintext">Title: About
 Date: 24, sep 2027
 
-## About
+# About
 Hai nama gua hero dan terimakasih telah memberikan
 gua kesemepatan untuk menemani malam sedih mu.
 </code></pre>
@@ -144,7 +142,7 @@ $ git push origin content
 </code></pre>
 
 
-## Akhirnya ~
+# Akhirnya ~
 Sekarang halaman github pages kalian sudah siap untuk dikunjungi!
 <pre><code class="plaintext">https://username.github.io/
 </code></pre>
