@@ -70,7 +70,18 @@ output
 paham? paham lah masa gaa. jadi intinya dia itu bisa ngerubah sebuah string itu menjadi sintaks murni. 
 btw Saya juga pernah implementasikan eval ini ke program simple random quiz math buatan saya, bisa cek <a href="https://pastebin.com/ZepZcygQ" style="color:#80ED99;">disini</a> untuk kodingannya.
 
-
+<br>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'e00dc4387e6c63802d3ac0af944c2eb6',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformancedformats.com/e00dc4387e6c63802d3ac0af944c2eb6/invoke.js"></scr' + 'ipt>');
+</script>
+<br>
 
 **Risk/Risiko**
 

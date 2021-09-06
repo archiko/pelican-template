@@ -11,23 +11,26 @@ yang mana website statis ini tidak memerlukan database maupun server-side logic 
 
 
 Kita masuk ke langkahnya
+<br>
+#### **Buat repositori baru**
 
-# Buat repositori baru
 Diakun github kalian buat satu repo yang sama dengan username kalian, diakhir dengan **.github.io**, seperti dibawah ini.
 <pre><code class="plaintext">github.com/username/username.github.io</code></pre>
 
-# Install pelican dan ghp-import
+<br>
+#### **Install pelican dan ghp-import**
+
 karena pelican merubah sebuah konten dari markdown menjadi html, kalian juga install Markdown. kita gunakan pip python untuk install nya :D
 <pre><code class="shell">$ pip install pelican ghp-import Markdown</code></pre>
 
+<br>
+#### **kloning repositori dan buat project**
 
-
-# kloning repositori dan buat project
 <pre><code class="shell">$ git clone https://github.com/username/username.github.io blog
 $ cd blog
 </code></pre>
 
-## sebelum itu ada tips
+##### **Tips**
 karena nanti file-file konfigurasi pelican bakalan muncul dihalaman pengguna (direpositori username.github.io) dengan cabang **master**, kita bisa memilah nya menjadi dua cabang, untuk file-file konfigruasinya kita taruh dicabang baru dengan nama **content**. sedangkan untuk hasil konten web dari pelican kita taruh dicabang **master**.
 
 ini akan memudahkan kita nantinya jika ingin menghapus seluruh halaman/konten dalam websitenya karena hanya ada dicabang **master** dan kita bisa mengisinya lagi dari cabang **content**.
@@ -39,13 +42,14 @@ paham? semoga....
 Switched to a new branch 'content'
 </code></pre>
 
-
-# Konfigurasi Pelican
+<br>
+#### **Konfigurasi pelican**
 Ditahap ini kita akan melakukan konfigurasi pelican.
 Untuk inisialisasi gunakan perintah **pelican-quickstart**.
 Nanti kalian disuruh menjawab serangkaian pertanyaan.
 
-<pre><code class="shell">$ pelican-quickstart
+<pre><code class="shell">
+$ pelican-quickstart
 Welcome to pelican-quickstart v4.6.0.
 
 This script will help you create a new Pelican-based website.
@@ -73,6 +77,7 @@ needed by Pelican.
 Done. Your new project is available at /root/blog
 </code></pre>
 
+
 untuk bagian upload your site using github pages kalian pilih "y" karena dalam toturial ini kita bakalan hosting nya digithub.
 
 coba sekarang kalian lihat isi foldernya.
@@ -80,15 +85,18 @@ coba sekarang kalian lihat isi foldernya.
 Makefile  content  output  pelicanconf.py  publishconf.py  tasks.py
 </code></pre>
 
-# Push!
+<br>
+#### **Push!**
 Setalah file-file diatas sudah ada, kita push ke repositori yang dibuat tadi dengan cabang konten.
-<pre><code class="shell">$ git add .
+```shell
+$ git add .
 $ git commit -m "-"
 $ git push origin content
-</code</pre>
-Maap jika info commitnya hanya "-" karena saya bingung mau isi dengan apa 😆
+```
+Maap jika info commitnya hanya "-" karena saya bingung mau isi dengan apa wkwk
 
-# Menambahkan sebuah postingan
+<br>
+#### **Menambahkan sebuah postingan**
 Yap disini kalian sudah bisa menambahkan artikel atau postingan.
 Ayo kita tambahkan 1 postingan 1 halaman untuk about.
 
@@ -100,7 +108,7 @@ $ touch post-1.md
 Buka file **post-1.md** dengan kode editor kesayangan kalian.
 tambahkan judul, tanggal, author dan isi konten.
 
-<pre><code claas="plaintext">Title: Hallo Dunia!
+<pre><code class="plaintext">Title: Hallo Dunia!
 Date: 24, sep 2027
 Author: Hero
 
@@ -114,7 +122,7 @@ nah sekarang kalian coba buka file **pages/about.md** dan tambahkan seperti diba
 <pre><code class="plaintext">Title: About
 Date: 24, sep 2027
 
-# About
+## About
 Hai nama gua hero dan terimakasih telah memberikan
 gua kesemepatan untuk menemani malam sedih mu.
 </code></pre>
@@ -122,8 +130,23 @@ gua kesemepatan untuk menemani malam sedih mu.
 
 Sekarang dicabang **content** kita memiliki 1 halaman dan 1 postingan. sekarang kita tinggal publish ini kehalaman github pages kita.
 
+<br>
+<script async="async" data-cfasync="false" src="//pl16575411.effectivecpmgate.com/e16ac09b2557683ec280a236f0c9e9c7/invoke.js"></script>
+<div id="container-e16ac09b2557683ec280a236f0c9e9c7"></div>
+<br>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '41764e38d9282efafaad334a6853f0f4',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformancedformats.com/41764e38d9282efafaad334a6853f0f4/invoke.js"></scr' + 'ipt>');
+</script>
 
-# Publish
+<br>
+#### **Publish**
 Oke, kalian ada ditahap terakhir, waktunya untuk mempublish halaman kita.
 
 * jalankan pelican untuk membuat file statis htmlnya dengan keluaran dipath **output**:
@@ -141,13 +164,15 @@ $ git commit -m "-"
 $ git push origin content
 </code></pre>
 
-
-# Akhirnya ~
+<br>
+#### **Akhirnya ~**
 Sekarang halaman github pages kalian sudah siap untuk dikunjungi!
 <pre><code class="plaintext">https://username.github.io/
 </code></pre>
 
-**Apa selanjutnya?**
+
+<br>
+###### **Penutup**
 Ya saya bisa yakin kalian akan bosan dengan tampilan defaultnya, namun kalian bisa mengantinya dengan tema-tema yang sudah banyak tersedia, bisa disearching sendiri. selain itu ada juga untuk kustomisasi tema secara mandiri (bikin sendiri) seperti blog ini, mungkin bakalan ada dinext post untuk toturialnya, pantengin teruss ya. enjoy!
 
 

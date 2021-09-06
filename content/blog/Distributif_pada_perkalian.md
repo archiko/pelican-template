@@ -82,3 +82,15 @@ tinggal kita jumlahkan
 
 
 okee, mungkin segini dulu. mohon maaf kalo susah dipaham, maupun jika ada kesalahan.
+<br><br>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'e00dc4387e6c63802d3ac0af944c2eb6',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformancedformats.com/e00dc4387e6c63802d3ac0af944c2eb6/invoke.js"></scr' + 'ipt>');
+</script>
+<br>
