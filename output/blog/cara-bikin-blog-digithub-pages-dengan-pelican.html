@@ -52,7 +52,7 @@ yang mana website statis ini tidak memerlukan database maupun server-side logic 
 <p>Kita masuk ke langkahnya
 <br></p>
 <h4><strong>Buat repositori baru</strong></h4>
-<p>Diakun github kalian buat satu repo yang sama dengan username kalian, diakhir dengan <strong>.github.io</strong>, seperti dibawah ini.</p>
+<p>Diakun github kalian buat satu repo sama dengan username kalian, diakhir dengan <strong>.github.io</strong>, seperti dibawah ini.</p>
 <pre><code class="plaintext">github.com/username/username.github.io</code></pre>
 
 <p><br></p>
@@ -126,7 +126,7 @@ $ git push origin content
 <p><br></p>
 <h4><strong>Menambahkan sebuah postingan</strong></h4>
 <p>Yap disini kalian sudah bisa menambahkan artikel atau postingan.
-Ayo kita tambahkan 1 postingan 1 halaman untuk about.</p>
+Ayo kita tambahkan 1 postingan dan 1 halaman untuk about.</p>
 <pre><code class="shell">$ cd content && mkdir pages
 $ touch pages/about.md
 $ touch post-1.md
@@ -175,7 +175,7 @@ gua kesemepatan untuk menemani malam sedih mu.
 </ul>
 <pre><code class="shell">$ pelican content -o output -s publishconf.py</code></pre>
 <ul>
-<li>gunakan <strong>ghp-import</strong> untuk menambahkan isi content dioutput tadi kecabang <strong>master</strong>:</li>
+<li>gunakan <strong>ghp-import</strong> untuk menambahkan isi konten dioutput tadi kecabang <strong>master</strong>:</li>
 </ul>
 <pre><code class="shell">$ ghp-import -m "-" --no-jekyll -b master output 
 </code></pre>
@@ -186,7 +186,7 @@ gua kesemepatan untuk menemani malam sedih mu.
 </code></pre>
 
 <ul>
-<li>lakukan push dan commit lagi untuk menambahkan content/post yang sudah dibuat tadi kecabang <strong>content</strong></li>
+<li>lakukan push dan commit lagi untuk menambahkan halaman dan post yang sudah dibuat tadi kecabang <strong>content</strong></li>
 </ul>
 <pre><code class="shell">$ git add content
 $ git commit -m "-"

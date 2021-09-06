@@ -14,7 +14,7 @@ Kita masuk ke langkahnya
 <br>
 #### **Buat repositori baru**
 
-Diakun github kalian buat satu repo yang sama dengan username kalian, diakhir dengan **.github.io**, seperti dibawah ini.
+Diakun github kalian buat satu repo sama dengan username kalian, diakhir dengan **.github.io**, seperti dibawah ini.
 <pre><code class="plaintext">github.com/username/username.github.io</code></pre>
 
 <br>
@@ -98,7 +98,7 @@ Maap jika info commitnya hanya "-" karena saya bingung mau isi dengan apa wkwk
 <br>
 #### **Menambahkan sebuah postingan**
 Yap disini kalian sudah bisa menambahkan artikel atau postingan.
-Ayo kita tambahkan 1 postingan 1 halaman untuk about.
+Ayo kita tambahkan 1 postingan dan 1 halaman untuk about.
 
 <pre><code class="shell">$ cd content && mkdir pages
 $ touch pages/about.md
@@ -151,14 +151,14 @@ Oke, kalian ada ditahap terakhir, waktunya untuk mempublish halaman kita.
 
 * jalankan pelican untuk membuat file statis htmlnya dengan keluaran dipath **output**:
 <pre><code class="shell">$ pelican content -o output -s publishconf.py</code></pre>
-* gunakan **ghp-import** untuk menambahkan isi content dioutput tadi kecabang **master**:
+* gunakan **ghp-import** untuk menambahkan isi konten dioutput tadi kecabang **master**:
 <pre><code class="shell">$ ghp-import -m "-" --no-jekyll -b master output 
 </code></pre>
 * sekarang tinggal kita push kecabang lokal **master**nya.
 <pre><code class="shell">$ git push origin master
 </code></pre>
 
-* lakukan push dan commit lagi untuk menambahkan content/post yang sudah dibuat tadi kecabang **content**
+* lakukan push dan commit lagi untuk menambahkan halaman dan post yang sudah dibuat tadi kecabang **content**
 <pre><code class="shell">$ git add content
 $ git commit -m "-"
 $ git push origin content

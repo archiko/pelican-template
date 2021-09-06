@@ -55,3 +55,13 @@ PAGINATION_PATTERNS = (
     (2, '{base_name}/{number}', '{base_name}/{number}{extension}/'),
 )
 
+SITEMAP = {
+    "format": "xml",
+    "exclude":['tag/'],
+    "priorities": {
+        "indexes": 0.5,
+    },
+    "changefreqs": {
+        "indexes": "daily",
+    }
+}
