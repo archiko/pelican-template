@@ -72,7 +72,7 @@ btw Saya juga pernah implementasikan eval ini ke program simple random quiz math
 
 
 
-Risk/Risiko.
+**Risk/Risiko**
 
 Tapi fungsi ini kurang bagus untuk digunakan jika tidak dipenuhi dengan validasi input atau penanganan yang mumpuni, jadi saya contohin seperti dibawah ini.
 
