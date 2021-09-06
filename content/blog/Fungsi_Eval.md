@@ -22,9 +22,7 @@ coba lihat contoh kode dibawah ini
 
 ```python
 a,b = 3,5
-```
 
-```python
 #pilihan: + / - *
 opsi = input('nilai a sama b ingin diapakan? ')
 print (a, opsi, b)
