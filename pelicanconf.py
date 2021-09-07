@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'Ardho Ainullah'
-SITENAME = 'Archiko - Python, Math And Data Scients.'
+SITENAME = 'Archiko'
 SITEURL = ''
 
 
