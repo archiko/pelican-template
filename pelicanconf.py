@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'Ardho Ainullah'
-SITENAME = 'Archiko'
+SITENAME = 'Archives Hiko'
 SITEURL = ''
 
 
