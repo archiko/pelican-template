@@ -12,7 +12,7 @@ yang mana website statis ini tidak memerlukan database maupun server-side logic 
 
 Kita masuk ke langkahnya
 <br>
-#### Buat repositori baru
+#### **Buat repositori baru**
 
 Diakun github kalian buat satu repo sama dengan username kalian, diakhir dengan **.github.io**, seperti dibawah ini.
 <pre><code class="plaintext">github.com/username/username.github.io</code></pre>
