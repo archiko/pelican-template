@@ -5,14 +5,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://archiko.my.id/</loc>
-<lastmod>2021-09-08T10:43:09-00:00</lastmod>
+<lastmod>2021-09-08T16:28:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://archiko.my.id/{slug}</loc>
-<lastmod>2021-09-08T10:43:09-00:00</lastmod>
+<lastmod>2021-09-08T16:28:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -41,6 +41,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://archiko.my.id/blog/Distributif-Pada-Perkalian</loc>
 <lastmod>2021-09-02T00:00:00+07:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://archiko.my.id/blog/mengenal-komutatif-dan-asosiatif</loc>
+<lastmod>2021-09-01T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
