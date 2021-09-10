@@ -27,10 +27,12 @@
 {% block contents %}
 {% if article %}
 
-
 <img src="{{URLSITE}}/thumb.webp" style="display:none">
 <div class="text-white">
-        <small class="text-secondary">{{article.locale_date}} </small>
+	<img src="{{URLSITE}}/images/picture.jpg" class="rounded-circle" width=45>
+	<small style="font-size:12px">&nbsp;{{article.author}} - </small> 
+        <small style="font-size:12px" class="text-secondary">{{article.locale_date}} </small>
+	<br><br>
         <span style="text-decoration:none;color:white"><h2><b>{{article.title}}</b></h2></span>
 	{% for tag in article.tags %}
         <a href="{{URLSITE}}/{{tag.url}}"><small class="badge bg-dark" style="color:white">{{tag}}</small></a>
