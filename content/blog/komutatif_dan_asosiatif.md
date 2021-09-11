@@ -1,4 +1,4 @@
-Title: komutatif dan asosiatif pada matematika
+Title: mengenal komutatif dan asosiatif
 Date: 1, Sep 2021.
 Tags: math,
 Slug: blog/komutatif-dan-asosiatif-pada-matematika
@@ -112,7 +112,7 @@ kelas 4 sd. walaupun ini hanyalah materi kelas 4 sd tidak ada salahnya untuk
 mempelajarinya. apalagi seperti saya yang lemah dasar matematika. jadi ya enjoy aja!
 
 
-apa selanjutnya? kita akan belajar tentang distributif
+apa selanjutnya? <a href="https://archiko.my.id/blog/mengenal-distributif">Distributif</a>
 
 
 
