@@ -1,6 +1,7 @@
 Title: mengenal distributif
 Date: 2, sep 2021.
 Tags: math, 
+Slug: blog/mengenal-distributif
 Author: Ardho Ainullah
 
 
