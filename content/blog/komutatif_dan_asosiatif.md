@@ -1,7 +1,7 @@
-Title: Mengenal komutatif dan asosiatif
+Title: komutatif dan asosiatif pada matematika
 Date: 1, Sep 2021.
 Tags: math,
-Slug: blog/mengenal-komutatif-dan-asosiatif
+Slug: blog/komutatif-dan-asosiatif-pada-matematika
 Author: Ardho Ainullah
 
 ###### **Komutatif (pertukaran)**

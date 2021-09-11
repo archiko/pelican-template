@@ -1,11 +1,11 @@
-Title: Distributif Pada Perkalian
+Title: Distributif
 Date: 2, sep 2021.
-Tags: math, perkalian
-Slug: blog/Distributif-Pada-Perkalian
+Tags: math, 
+Slug: blog/Distributif
 Author: Ardho Ainullah
 
 
-Distributif (penyebaran) dalam perkalian itu bisa dinyatakan dengan:
+Distributif (penyebaran) itu bisa dinyatakan dengan:
 
 <pre><code class="language-plaintext">a x (b + c) = (a x b) + (a x c)</code></pre>
 
@@ -34,7 +34,7 @@ doi   = 4 x 5 = 20
 hasil = 25 + 20 = 45
 </code></pre>
 
-jika ditulis dalam kalimat math
+jika ditulis dalam kalimat matematika
 <pre>
 <code class="plaintext">( 5 x 5) + (4 x 5) = 25 + 20 = 45</code></pre>
 
@@ -81,8 +81,6 @@ tinggal kita jumlahkan
 
 
 
-okee, mungkin segini dulu. mohon maaf kalo susah dipaham, maupun jika ada kesalahan.
-<br><br>
 <script type="text/javascript">
 	atOptions = {
 		'key' : 'e00dc4387e6c63802d3ac0af944c2eb6',
