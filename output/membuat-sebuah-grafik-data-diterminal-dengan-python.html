@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>
+Membuat sebuah grafik data diterminal dengan python
+		</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Archiko, Belajar ngoding, Matematika, Toturial Python">
+		<meta name="description" content="a python enthusiast">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <link rel="shortcut icon" href="/favicon.ico?v=2">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+                <link href="/theme/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+                <link rel="stylesheet" href="/theme/css/style.css">
+		<link rel="stylesheet" href="/theme/css/default.min.css">
+		<link rel="stylesheet" href="/theme/css/nord.css">
+		<!-- Google Adsense-->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2149089797407520" crossorigin="anonymous"></script>
+        </head>
+
+<body style="background-color:#0e1111">
+<div class="container p-3" id="zetmono">
+<div class="navbar-nav">
+
+        <small style="color:#80ED99;float:left;margin-top:13px;position:absolute" class="badge bg-dark" >cat *.md</small>
+        <div class="nav-link ms-auto fas fa-bars fa-2x" href="#" id="dropdownMenuButton1" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#80ED99;float:right;"></div>
+
+      <ul class="dropdown-menu dropdown-menu-end bg-dark p-3 " style="border-radius:10px" aria-labelledby="dropdownMenuButton1">
+        <li><a class="bg-transparent dropdown-item" style="color:#80ED99;" href="/"><small>/Home</small></a></li>
+        <li><a class="bg-transparent dropdown-item" style="color:#80ED99;"href="/blog"><small>/Blog</small></a></li>
+        <li><a class="bg-transparent dropdown-item" style="color:#80ED99;" href="/about"><small>/About</small></a></li>
+      </ul>
+
+</div>
+</div>
+
+<div id="zetmono" class="container">
+
+<img src="/thumb.webp" style="display:none">
+<div class="text-white">
+	<img src="/images/picture.jpg" class="rounded-circle" width=45>
+	<small style="font-size:12px">&nbsp;Ardho Ainullah - </small> 
+        <small style="font-size:12px" class="text-secondary">10, Sep 2021 </small>
+	<br><br>
+        <span style="text-decoration:none;color:white"><h2><b>Membuat sebuah grafik data diterminal dengan python</b></h2></span>
+        <a href="/tag/python"><small class="badge bg-dark" style="color:white">python</small></a>
+        <a href="/tag/tools"><small class="badge bg-dark" style="color:white">tools</small></a>
+        <a href="/tag/packages"><small class="badge bg-dark" style="color:white">packages</small></a>
+</div><br>
+
+<div class="text-white">
+<p>Pernah terbesit atau terpikir buat nampilin grafik data atau chart diterminal?
+mungkin dari beberapa kalian pasti pernah kepikiran. apalagi yang make
+termux buat belajar visualisasi data diandroid karena setau saya
+tidak support buat display representasi visual dengan matplotlib.
+walaupun sebenarnya bisa, jika kalian menginstall jupyter-notebook,
+cuman kurang enak kalo bagi saya karena dilempar ke peramban buat aksesnya.</p>
+<p>Oleh karena itu ada sebuah tool dan package yang bernama <strong>termgraph</strong> dan <strong>plotext</strong>
+yang mana keduanya dibuat dengan bahasa pemogramman python.</p>
+<h4><strong>Termgraph</strong></h4>
+<p>Termgraph ada sebuah tool yang memungkinkan kamu untuk menampilkan
+grafik dasar/chart dicommand line interface (cli). saya sangat suka
+dengan termgraph, kenapa? karena penggunaan yang cukup mudah,
+dan tampilan visual dasarnya yang sangat simple.</p>
+<script type="text/javascript">
+    atOptions = {
+        'key' : 'e00dc4387e6c63802d3ac0af944c2eb6',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformancedformats.com/e00dc4387e6c63802d3ac0af944c2eb6/invoke.js"></scr' + 'ipt>');
+</script>
+
+<h6>untuk menginstallnya cukup dengan pip</h6>
+<pre><code class="shell">$ pip install termgraph</code></pre>
+<p>setelah itu buat lah sebuah file dengan extensi .dat misal <strong>post.dat</strong></p>
+<p>untuk contohnya kita bisa membuat seperti dibawah ini untuk
+menampilkan jumlah like, share dan comment dari postingan hari senin
+sampai rabu.</p>
+<pre><code class="plaintext"># Example
+
+@ Like, Share, Comment
+
+senin, 1200,500,1000
+selasa, 1001,550, 300
+rabu, 900,1000, 500
+</code></pre>
+
+<p>untuk menampilkan hasil tersebut kalian bisa masukan perintah</p>
+<pre><code class="shell">termgraph post.dat --color {blue,green,red}</code></pre>
+<p>maka hasilnya akan seperti dibawah ini
+<br><br>
+<img src="/images/blog/termgraph.jpg" class="img-fluid" alt="termgraph">
+<br><br>
+dibagian --color kalian bisa isi dengan warna yang sudah disediakan</p>
+<p>full docs: <a href="https://github.com/mkaz/termgraph" style="color:#80ED99">Here</a></p>
+<p><br></p>
+<h4><strong>plotext</strong></h4>
+<p>Jika termgraph adalah sebuah tool berbeda dengan plotext, plotext ini adalah sebuah
+package python yang sangat mirip dengan library matplotlib namun bedanya ini dikhususkan
+untuk melakukan visualisasi diterminal.</p>
+<script type="text/javascript">
+    atOptions = {
+        'key' : 'e00dc4387e6c63802d3ac0af944c2eb6',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformancedformats.com/e00dc4387e6c63802d3ac0af944c2eb6/invoke.js"></scr' + 'ipt>');
+</script>
+
+<h6>untuk menginstallnya cukup dengan pip</h6>
+<pre><code clase="shell">$ pip install plotext</code></pre>
+
+<p>ada banyak pilihan untuk elemen visual data yang ada diplotext, seperti scatter plot,
+line plot,log plot, stem plot dan banyak lagi. </p>
+<p>disini kita akan mencoba line plot saja,
+buat sebuah file python dan isi seperti dibawah ini.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">plotext</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p>yups sekarang kita coba jalankan programnya</p>
+<div class="highlight"><pre><span></span><code>$ python3 test.py
+</code></pre></div>
+
+<p>maka hasilnya akan seperti dibawah ini.
+<br><br>
+<img src="/images/blog/plotext.jpg" class="img-fluid">
+<br><br></p>
+<p>ntahlah seharusnya dia bakalan ngelengkung cuman pas saya coba lagi
+seperti sangat kasar tampilannya, it's oke kalian coba aja mungkin
+berbeda dengan punya saya.</p>
+<p>kalian bisa lihat dokumentasi lengkapnya 
+<a href="https://pypi.org/project/plotext/" style="color:#80ED99">disini</a></p>
+<p><br><br></p>
+<h5><strong>penutup</strong></h5>
+<p>selain dua itu banyak sekali yang menyediakan package, module atau tool yang
+bisa untuk melakukan visualisasi di cli / terminal. tapi disini hanya dua itu saja.
+karena itu udah best banget buat saya, oke mungkin segini duluu, dankee.</p>
+</div>
+</div>
+
+<div id="zetmono" class="container">
+</div>
+
+
+
+<br><br>
+<div class="footer text-secondary text-center " style="margin-top:auto;background:transparent">
+        <div class="col-lg-12 p-3">
+        <div class="row copyright">
+            <div class="col-lg-12">
+                <p style="font-size:10px">&copy; 2021 Archiko <br>Dibuat dengan <i class="fa fa-heart"></i> & <i class="fa fa-coffee"></i> </p>
+            </div>
+        </div>
+       </div>
+</div>
+    <script src="/theme/jquery/jquery.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="/theme/bootstrap/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/theme/popper/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="/theme/js/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+
+</body>
+</html>
