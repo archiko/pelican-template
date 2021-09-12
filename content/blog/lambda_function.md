@@ -59,7 +59,8 @@ yap dengan lambda kita bisa menghemat baris kode :3
 <br>
 #### **cara pengunaan**
 karena lambda tidak mempunyai nama (anonymous function) 
-kita bisa memberikan nama untuk fungsinya agar lebih mudah
+kita bisa membuat sebuah variabel untuk mendifiniskan
+nama untuk fungsinya agar lebih mudah
 untuk memanggil atau menggunakan fungsinya.
 
 ```
@@ -75,7 +76,7 @@ xKira
 ```
 
 kita juga bisa langsung untuk mengambil nilainya tanpa harus
-memberikan nama atau identitas kepada fungsinya
+menjadikan ekspresi lambdanya sebagai variabel.
 ```
 (lambda name:print(name))('xHiko')
 (lambda name:print(name))('xKira')
