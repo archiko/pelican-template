@@ -3,32 +3,39 @@
 {% block title %}
 Archives Hiko
 {% endblock title %}
+
+
 {% block contents %}   
+<!--
+\|/          (__)
+     `\------(oo) he?
+       ||    (__)
+       ||w--||     \|/
+   \|/
+-->
 
 <div style="padding-top:60%">
-
-<h1 class="badge bg-white text-dark" style="font-size:24px">ひこアーカイブ</h1>
-<br>
-<div class="typewriter">
-        <div class="typewriter-text" style="text-indent:2px;">
-                <small style="font-size:12px">a python enthusiast
+	<span class="text-white" style="font-size:30px"><b>ひこアーカイブ</b></span>
+	<img src="/theme/img/cute.gif" width=30 style="margin-top:-15px" alt="moshi moshi"> 
+	<br>
+	<div class="typewriter">
+		<div class="typewriter-text" style="text-indent:2px;">
+			<small style="font-size:12px" class="text-secondary">a python enthusiast
                 </small>
-        </div>
+		</div>
+	</div>
+	<br>
 </div>
-<br>
+
 
 <div class="mt-5">
-        <br>
-        <a href="{{URLSITE}}/blog" style="color:white;text-decoration:none;">
-                <small>/Blog</small>
-        </a>
-        </br>
-        <a href="{{URLSITE}}/about" style="color:white;text-decoration:none;">
-                <small>/About</small>
-        </a>
-        <br>
-        <br>
-</div>
+	<a href="{{URLSITE}}/blog" style="color:white;text-decoration:none;">
+		<small>/Blog</small>
+	</a>
+	<br>
+	<a href="{{URLSITE}}/about" style="color:white;text-decoration:none;">
+		<small>/About</small>
+	</a>
 </div>
 
 {% endblock contents %}

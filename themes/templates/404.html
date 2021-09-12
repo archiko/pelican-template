@@ -1,14 +1,35 @@
-{% extends "base.html"%}
+{% extends "base.html" %}
 
 {% block title %}
 404 Page Not Found
 {% endblock title %}
+
 {% block contents %}
+<!--
+_nnnn_
+        dGGGGMMb     ,"""""""""""""".
+       @p~qp~~qMb    |    Damn 404  |
+       M|@||@) M|   _;..............'
+       @,----.JM| -'
+      JS^\__/  qKL
+     dZP        qKRb
+    dZP          qKKb
+   fZP            SMMb
+   HZM            MMMM
+   FqM            MMMM
+ __| ".        |\dS"qML
+ |    `.       | `' \Zq
+_)      \.___.,|     .'
+\____   )MMMMMM|   .'
+     `-'       `--' hjm
+-->
+
 <div style="padding-top:60%">
-<h1 style="font-size:45px;color:#80ED99"><big><b>404</b></big></h1>
-<small class="text-white" style="font-size:12px">Yahh, gada nih sob halamannya.</small>
-<br>
-<a href="{{URLSITE}}/" class="badge bg-dark" style="font-size:10px;color:#80ED99;text-decoration:none">Back To Home </a>
-
-
+	<h1 style="font-size:45px;color:#80ED99">
+		<big><b>404</b></big>
+	</h1>
+	<small class="text-white" style="font-size:12px">Yahh, gada nih sob halamannya.</small>
+	<br>
+	<a href="{{URLSITE}}/" class="badge bg-dark" style="font-size:10px;color:#80ED99;text-decoration:none">Back To Home </a>
+</div>
 {% endblock contents %}
