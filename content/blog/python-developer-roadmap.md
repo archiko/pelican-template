@@ -41,12 +41,12 @@ Author: Ardho Ainullah
 * Data Structures
 * Algorithms
 
-#### Web Scrapping 
+#### **Web Scrapping**
 * Beautiful soup
 * Selenium
 * Scrapy
 
-##### **Project Ideas**
+###### **Project Ideas**
 
 * Hacker News Scraper
 * Dev.to Scrapper
@@ -60,7 +60,7 @@ Author: Ardho Ainullah
 * Zappa
 * Dash
 
-#### **Project Ideas**
+###### **Project Ideas**
 
 * Login System
 * Portfolio
@@ -72,7 +72,7 @@ Author: Ardho Ainullah
 * DevOps: Docker, Kubernetes, Gradle, etc
 * System Admin
 
-##### **Project Ideas**
+###### **Project Ideas**
 
 * Automate the Boring Stuff
 * Create a Calculator
@@ -92,7 +92,7 @@ Author: Ardho Ainullah
 * Footprinting
 * Firewall
 
-##### **Project Ideas**
+###### **Project Ideas**
 
 * Hacking wireless networks
 * Create a vulnerable site and hack it
