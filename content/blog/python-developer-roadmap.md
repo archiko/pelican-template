@@ -1,4 +1,4 @@
-Title: Python developer roadmap
+Title: python developer roadmap
 Date: 13, Sep 2021
 Tags: python, general
 Slug: blog/Python-developer-roadmap
@@ -40,7 +40,8 @@ Author: Ardho Ainullah
 * Big O Notation
 * Data Structures
 * Algorithms
-* Web Scrapping 🗄️
+
+#### Web Scrapping 
 * Beautiful soup
 * Selenium
 * Scrapy
