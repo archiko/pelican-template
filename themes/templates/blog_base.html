@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>
+                        {% block title %}
+                        {% endblock title %}
+                </title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="keywords" content="Archiko, Belajar ngoding, Matematika, Toturial Python">
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta property="og:image" content="https://archiko.my.id/thumb.webp"/>
+                <link rel="shortcut icon" href="{{URLSITE}}/favicon.ico?v=2">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+                <link href="{{URLSITE}}/theme/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+                <link rel="stylesheet" href="{{URLSITE}}/theme/css/style.css">
+                <link rel="stylesheet" href="{{URLSITE}}/theme/css/default.min.css">
+                <link rel="stylesheet" href="{{URLSITE}}/theme/css/nord.css">
+                <!-- Google Adsense-->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2149089797407520" crossorigin="anonymous"></script>
+        </head>
+
+<body style="background-color:#0e1111">
+{% block navbar %}
+{% endblock navbar %}
+
+<div id="zetmono" class="container">
+ {% block contents %}
+ {% endblock contents %}
+</div>
+
+{% block pagination %}
+{% endblock pagination %}
+
+
+{% block footer %}
+{% endblock footer %}
+
+<script src="{{URLSITE}}/theme/jquery/jquery.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="{{URLSITE}}/theme/bootstrap/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="{{URLSITE}}/theme/popper/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="{{URLSITE}}/theme/js/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+</body>
+</html>
