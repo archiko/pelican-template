@@ -39,6 +39,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 #ACTIVE WHEN POSTS > 10
 #DEFAULT_PAGINATION = 5
 
+DEFAULT_METDADATA = {'Status':'draft'}
 FILENAME_METADATA = "(?P<title>)"
 STATIC_PATHS = ['images','extra','extra/CNAME']
 EXTRA_PATH_METADATA = {
