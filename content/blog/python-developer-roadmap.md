@@ -4,7 +4,6 @@ Tags: python, general
 Slug: blog/Python-developer-roadmap
 Author: Ardho Ainullah
 
-
 #### **Advanced Python**
 * OOP
 * Classes

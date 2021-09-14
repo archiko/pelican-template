@@ -6,6 +6,17 @@
 {% endif %}
 {% endblock title %}
 
+
+{% block thumbnail %}
+{% if article %}
+  {% if article.thumbnail %}
+	<meta property="og:image" content="{{article.thumbnail}}"/>
+  {% else %}
+    	<meta property="og:image" content="https://archiko.my.id/thumb.webp"/>
+  {% endif %}
+{% endif %}
+{% endblock thumbnail %}
+
 {% block navbar %}
 <div class="container p-3" id="zetmono">
 	<div class="navbar-nav">
@@ -41,7 +52,6 @@
 
 {% if article %}
 <div class="text-white">
-	<img src="{{URLSITE}}/thumb.webp" style="display:none">
 	<img src="{{URLSITE}}/theme/img/author.jpg" class="rounded-circle" width=45>
 	<small style="font-size:12px">&nbsp;{{article.author}} - </small> 
         <small style="font-size:12px" class="text-secondary">{{article.locale_date}} </small>
