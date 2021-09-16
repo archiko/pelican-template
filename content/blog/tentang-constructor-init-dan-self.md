@@ -6,7 +6,6 @@ Author: Ardho Ainullah
 Status: published
 Thumbnail: /images/blog/initself.jpg
 
-<br><br>
 ##### **\__init__()**
 pada python itu ada yang namanya magic keyword ciri-cirinya itu sederhana
 yaitu ada double underscore **"__"** nah salah satunya adalah `__init__`ini.
