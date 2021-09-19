@@ -5,14 +5,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://archiko.my.id/</loc>
-<lastmod>2021-09-19T13:47:38-00:00</lastmod>
+<lastmod>2021-09-19T13:51:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://archiko.my.id/{slug}</loc>
-<lastmod>2021-09-19T13:47:38-00:00</lastmod>
+<lastmod>2021-09-19T13:51:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
