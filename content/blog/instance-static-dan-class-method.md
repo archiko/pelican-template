@@ -29,8 +29,18 @@ untuk siattribute text (instance variabel).
 nah jadi gini kita tau pemanggilan method `showInfo()` itu seperti ini `info().showInfo()`
 nah ini itu sebenarnya kurang bagus, kenapa? wait kita cari tau dulu
 tentang static method dan class method agar kita bisa lebih mudah memahami kurang
-bagusnya atau kita bilang kurang elegan..
+bagusnya atau kita bilang kurang elegannya..
 
+<script type="text/javascript">
+        atOptions = {
+                'key' : '41764e38d9282efafaad334a6853f0f4',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+        };
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformancedformats.com/41764e38d9282efafaad334a6853f0f4/invoke.js"></scr' + 'ipt>');
+</script>
 #### **static method**
 untuk membuat sebuah static method kita hanya perlu mendifinisikan methodnya
 dengan decorator `@staticmethod`. static method ini berbeda dengan instance method
@@ -66,6 +76,16 @@ dan kita panggil kedalam static method ya bakalan error karena emg gabisa.
 waktu untuk menggunakan static method ini tergantung sih, ada waktu nya kalian ingin membuat
 fungsi didalam class tanpa harus si fungsi ikut campur dengan method-method lainnya.
 
+<script type="text/javascript">
+        atOptions = {
+                'key' : '41764e38d9282efafaad334a6853f0f4',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+        };
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformancedformats.com/41764e38d9282efafaad334a6853f0f4/invoke.js"></scr' + 'ipt>');
+</script>
 
 #### **class method**
 Untuk membuat sebuah class method kita perlu mendifinisikan methodnya lagi dengan decorator
