@@ -63,26 +63,39 @@ instance method, class method dan static method
 </div>
 <br>
 <div class="text-white">
-	<p>sebuah method yang ada didalam class dan ia menggunakan argumen <code>self</code> maka ia
-disebut instance method, paham? gudd!</p>
-<p>disini kita bakalan lebih fokus membahas tentang static dan class method saja,
-kenapa? karena saya tau kalian udah paham sama instance method.</p>
-<p>coba lihat contoh dari instance method</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="n">info:</span>
-   <span class="n">def</span> <span class="n">__init__</span>(<span class="nb">self</span>):
-       <span class="nb">self</span>.<span class="n">text</span> = <span class="s">&quot;helo i&#39;m gruutz&quot;</span>
-
-   <span class="n">def</span> <span class="n">showInfo</span>(<span class="nb">self</span>):
-       <span class="k">return</span> <span class="nb">self</span>.<span class="n">text</span>
+	<p>instance method itu adalah method yang ada didalam class ia menerima argumen <code>self</code> sebagai parameter pertamanya. yang mana nantinya akan berbeda dengan static method dan class method.</p>
+<p><strong>sintaks instance method</strong></p>
+<div class="highlight"><pre><span></span><code>def func(self, arg1, arg2, ...)
 </code></pre></div>
 
-<p>fungsi <code>showInfo()</code> inilah yang disebut sebagai instance method, ia mengembalikan hasil
-untuk siattribute text (instance variabel).
-<br><br>
-nah jadi gini kita tau pemanggilan method <code>showInfo()</code> itu seperti ini <code>info().showInfo()</code>
-nah ini itu sebenarnya kurang bagus, kenapa? wait kita cari tau dulu
-tentang static method dan class method agar kita bisa lebih mudah memahami kurang
-bagusnya atau kita bilang kurang elegannya..</p>
+<p><strong>contoh dari instance method</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">phone</span><span class="p">:</span>
+
+     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">brand</span> <span class="o">=</span> <span class="s2">&quot;MIUI&quot;</span>
+
+     <span class="k">def</span> <span class="nf">showBrand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">brand</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="n">phone</span><span class="p">()</span><span class="o">.</span><span class="n">showBrand</span><span class="p">())</span>
+<span class="c1">#output: MIUI</span>
+</code></pre></div>
+
+<p>seperti inilah bentukan dari instance method, kalian bisa lihat dibagian paramater <code>showBrand()</code> ia diisi dengan <code>self</code>, dengan adanya <code>self</code> method <code>showBrand()</code> ini leluasa untuk memanggil atau merubah attribute-attribute yang ada didalam classnya sendiri.</p>
+<p>contoh kita bisa mengubah value dari <code>self.brand</code> melalui instance method ini.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">phone</span><span class="p">:</span>
+
+       <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+           <span class="bp">self</span><span class="o">.</span><span class="n">brand</span> <span class="o">=</span> <span class="s2">&quot;MIUI&quot;</span>
+
+       <span class="k">def</span> <span class="nf">changeBrand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+           <span class="bp">self</span><span class="o">.</span><span class="n">brand</span> <span class="o">=</span> <span class="s2">&quot;Apple&quot;</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="n">phone</span><span class="p">()</span><span class="o">.</span><span class="n">changeBrand</span><span class="p">())</span>
+<span class="c1">#OUTPUT: Apple</span>
+</code></pre></div>
+
+<p>yaps udah paham kan sama instance method? next!<br><br></p>
 <script type="text/javascript">
         atOptions = {
                 'key' : '41764e38d9282efafaad334a6853f0f4',
@@ -93,83 +106,135 @@ bagusnya atau kita bilang kurang elegannya..</p>
         };
         document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformancedformats.com/41764e38d9282efafaad334a6853f0f4/invoke.js"></scr' + 'ipt>');
 </script>
+
 <h4><strong>static method</strong></h4>
-<p>untuk membuat sebuah static method kita hanya perlu mendifinisikan methodnya
-dengan decorator <code>@staticmethod</code>. static method ini berbeda dengan instance method
-jika instance method perlu argumen <code>self</code> maka static sebaliknya tidak membutuhkannya,
-namun kita tetap masih bisa memberinya paramater namun hanya ketiadaan <code>self</code>.</p>
-<p>contoh</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">info</span><span class="p">:</span>
-
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">pass</span>
-
-    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">showInfo</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">text</span> <span class="o">+</span> <span class="s2">&quot; gruutz&quot;</span>
-
-<span class="nb">print</span> <span class="p">(</span><span class="n">info</span><span class="o">.</span><span class="n">showInfo</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">))</span>
-
-<span class="c1">#outpur: hello gruutz</span>
+<p>untuk membuat sebuah static method kita hanya perlu mendifinisikannya dengan decorator <code>@staticmethod</code> sebelum membuat fungsinya. static method ini berbeda dengan instance method,
+jika instance method paramater utamanya <code>self</code> maka static method tidak punya paramater yang wajib diisi, namun ia masih bisa menerima argumen-argumen/paramater.</p>
+<p><strong>sintaks static method</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nv">@staticmethod</span><span class="w"></span>
+<span class="n">def</span><span class="w"> </span><span class="n">func</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span><span class="w"> </span><span class="n">arg2</span><span class="p">,</span><span class="w"> </span><span class="p">...)</span><span class="w"></span>
 </code></pre></div>
 
-<p>nah kurang lebih seperti itu, lihat cara pemanggilan methodnya <code>info.showInfo()</code>
-berbeda bukan dengan instance method diatas? lebih pendek tentunya dan terlihat
-elegan :v</p>
-<p>static method ini bisa dibilang tidak tahu menahu atau
-bersangkut paut dengan siclass. jadi kita tidak bisa memanggil sebuah attribute
-yang ada didalam class tersebut seperti si instance method, misal <code>self.namaAttribute</code>
-dan kita panggil kedalam static method ya bakalan error karena emg gabisa.</p>
-<p>waktu untuk menggunakan static method ini tergantung sih, ada waktu nya kalian ingin membuat
-fungsi didalam class tanpa harus si fungsi ikut campur dengan method-method lainnya.</p>
-<script type="text/javascript">
-        atOptions = {
-                'key' : '41764e38d9282efafaad334a6853f0f4',
-                'format' : 'iframe',
-                'height' : 300,
-                'width' : 160,
-                'params' : {}
-        };
-        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformancedformats.com/41764e38d9282efafaad334a6853f0f4/invoke.js"></scr' + 'ipt>');
-</script>
+<p><strong>contoh dari static method</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">phone</span><span class="p">:</span>
+      <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">brand</span> <span class="o">=</span> <span class="s2">&quot;MIUI&quot;</span>
 
+      <span class="nd">@staticmethod</span>
+      <span class="k">def</span> <span class="nf">version</span><span class="p">():</span>
+          <span class="k">return</span> <span class="s2">&quot;11&quot;</span>
+
+<span class="n">merek</span> <span class="o">=</span> <span class="n">phone</span><span class="p">()</span><span class="o">.</span><span class="n">brand</span>
+<span class="n">versi</span> <span class="o">=</span> <span class="n">phone</span><span class="o">.</span><span class="n">version</span><span class="p">()</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="n">merek</span><span class="o">+</span><span class="n">versi</span><span class="p">)</span>
+
+<span class="c1">#output: MIUI 11</span>
+</code></pre></div>
+
+<p><strong>contoh static method dengan paramater</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">phone</span><span class="p">:</span>
+       <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+           <span class="bp">self</span><span class="o">.</span><span class="n">brand</span> <span class="o">=</span> <span class="s2">&quot;MIUI&quot;</span>
+
+       <span class="nd">@staticmethod</span>
+       <span class="k">def</span> <span class="nf">version</span><span class="p">(</span><span class="n">versi</span><span class="p">):</span>
+           <span class="k">return</span> <span class="n">versi</span> <span class="o">+</span> <span class="s2">&quot;stabil&quot;</span>
+
+<span class="n">merek</span> <span class="o">=</span> <span class="n">phone</span><span class="p">()</span><span class="o">.</span><span class="n">brand</span>
+<span class="n">versi</span> <span class="o">=</span> <span class="n">phone</span><span class="o">.</span><span class="n">version</span><span class="p">(</span><span class="s1">&#39;11&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="n">merek</span> <span class="o">+</span> <span class="n">versi</span><span class="p">)</span>
+<span class="c1">#output: MIUI 11 stabil</span>
+</code></pre></div>
+
+<p>seperti inilah static method itu, coba kalian perhatiin perbedaan sintaks untuk
+menampilkan output dari instance method dengan static method.</p>
+<ul>
+<li>sintaks instance method memanggil output untuk fungsinya</li>
+</ul>
+<div class="highlight"><pre><span></span><code>namaClass().namaFungsi()
+</code></pre></div>
+
+<ul>
+<li>atau jika instance method hanya memanggil suatu attribute seperti contoh kode diatas</li>
+</ul>
+<div class="highlight"><pre><span></span><code>namaClass().namaAttribute
+</code></pre></div>
+
+<ul>
+<li>sintaks static method memanggil output untuk fungsinya</li>
+</ul>
+<div class="highlight"><pre><span></span><code>namaClass.namaFungsi()
+</code></pre></div>
+
+<p>tentunya static method terlihat elegan bukan? karena dia gaperlu buka, tutup kurung berulang wkwk.</p>
+<p>instance method itu sangat leluasa untuk memanggil seluruh attribute-attribute yang ada diclassnya kan? nah distatic method itu tidak berlaku. jadi kita tidak bisa memanggil attribute yang ada diclass seperti dengan <code>self.NamaAttribute</code> jadi dia itu kaya dirinya sendiri aja gitu gada sangkut paut sama attribute-attribute atau method yang ada diclassnya.</p>
+<p>waktu untuk menggunakan static method ini tergantung, ada waktu nya kalian ingin membuat
+method didalam class tanpa harus simethod ini ikut campur dengan method-method lainnya.</p>
 <h4><strong>class method</strong></h4>
-<p>Untuk membuat sebuah class method kita perlu mendifinisikan methodnya lagi dengan decorator
-<code>@classmethod</code>. class method ini memerlukan argumen <code>cls</code> sama halnya seperti instance method
-yang memerlukan <code>self</code>.</p>
+<p>Untuk membuat sebuah class method kita perlu mendifinisikannya lagi dengan decorator
+<code>@classmethod</code> sebelum membuat fungsinya.</p>
+<p>Jika instance method parameter pertamanya adalah <code>self</code> maka class method juga punya, ia diberi argumen/paramater dengan nama <code>cls</code></p>
 <p><strong>NOTE</strong>: Sebenarnya argumen seperi <code>self</code> atau <code>cls</code> untuk class method itu tidak harus bernama
-<code>self</code> atau <code>cls</code> kalian bebas mengisinya seperti <code>obj</code> atau apapun itu. namun standarnya emg gitu.
-mungkin biar lebih enak aja dimengerti. oke right?</p>
-<p>contoh dari method class</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">marvel</span><span class="p">:</span>
-    <span class="n">hero</span> <span class="o">=</span> <span class="s2">&quot;deadpool&quot;</span>
-
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">power</span> <span class="o">=</span> <span class="s2">&quot;Humoris&quot;</span>
-
-    <span class="nd">@classmethod</span>
-    <span class="k">def</span> <span class="nf">heroName</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;name: </span><span class="si">{</span><span class="bp">cls</span><span class="o">.</span><span class="n">hero</span><span class="si">}</span><span class="s2">&quot;</span>
-
-    <span class="nd">@classmethod</span>
-    <span class="k">def</span> <span class="nf">heroPower</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;power: </span><span class="si">{</span><span class="bp">cls</span><span class="p">()</span><span class="o">.</span><span class="n">power</span><span class="si">}</span><span class="s2">&quot;</span>
-
-
-<span class="nb">print</span> <span class="p">(</span><span class="n">marvel</span><span class="o">.</span><span class="n">heroName</span><span class="p">())</span>
-<span class="nb">print</span> <span class="p">(</span><span class="n">marvel</span><span class="o">.</span><span class="n">heroPower</span><span class="p">())</span>
-
-<span class="c1">#output: name: deadpool</span>
-<span class="c1">#        power: Humoris</span>
+<code>self</code> atau <code>cls</code> kalian bebas mengisinya seperti <code>obj</code> atau apapun itu, jadi nanti kalo mau panggil suatu attribute bisa gini <code>obj.nama</code>. tapi lebih bagusnya kita menggunakan nama standarnya aja karena didokumentasi python sendiri juga seperti itu.</p>
+<p><br><br>
+<strong>sintaks class method</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nv">@classmethod</span><span class="w"></span>
+<span class="n">def</span><span class="w"> </span><span class="n">func</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span><span class="w"> </span><span class="n">arg1</span><span class="p">,</span><span class="w"> </span><span class="n">arg2</span><span class="p">,</span><span class="w"> </span><span class="p">....)</span><span class="w"></span>
 </code></pre></div>
 
-<p>saya membuat sebuah class method <code>heroName()</code> yang mana ini akan mengembalikan attribute hero (static variabel) yang ada diclass marvel.</p>
-<p>sedangkan untuk class method <code>heroPower()</code>  ini akan mengembalikan attribute si power (instance variabel) yang ada dimethod <code>init</code></p>
+<p><strong>contoh class method</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">phone</span><span class="p">:</span>
+       <span class="n">brand</span> <span class="o">=</span> <span class="s2">&quot;MIUI&quot;</span>
+
+       <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+           <span class="k">pass</span>
+
+       <span class="nd">@classmethod</span>
+       <span class="k">def</span> <span class="nf">showBrand</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+           <span class="k">return</span> <span class="nb">print</span><span class="p">(</span> <span class="bp">cls</span><span class="o">.</span><span class="n">brand</span> <span class="p">)</span>
+
+<span class="n">phone</span><span class="o">.</span><span class="n">showBrand</span><span class="p">()</span>
+<span class="c1">#output: MIUI</span>
+</code></pre></div>
+
 <p><br></p>
 <h6><strong>pengertiaan argumen cls</strong></h6>
-<p>cls itu adalah si class marvel. jadi kita bisa memanggil variabel hero dengan <code>cls.hero</code>
-sama seperti variabel <code>self.power</code> kita bisa mengambilnya dengan <code>cls().power</code>.</p>
+<p>kalo merujuk dari contoh kode diatas maka <code>cls</code> itu bisa kita bilang adalah si class <code>phone</code>. jadi kita bisa memanggil static variabel yang ada diclassnya didalam method class itu sendiri. semisal <code>cls.brand</code> maka sama saja seperti <code>ponsel.brand</code>.</p>
 <p>kurang lebih seperti itu.</p>
+<p><br><br></p>
+<h4><strong>factory method</strong></h4>
+<p>ada kelebihan dari class method ini daripada static method yang mana ia bisa membuat sebuah factory method. </p>
+<p>factory method adalah sebuah method yang sama seperti method konstruktor init dan ia juga bisa membuat sebuah instance dari suatu class.</p>
+<p>yang mana nanti kita bisa membuatnya menjadi lebih berbeda dengan konstruktor aslinya.</p>
+<p>contoh factory method dengan class</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">phone</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">brand</span><span class="p">,</span><span class="n">version</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">brand</span> <span class="o">=</span> <span class="n">brand</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">version</span> <span class="o">=</span> <span class="n">version</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">infoDevice</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span><span class="n">brand</span><span class="p">,</span><span class="n">version</span><span class="p">):</span>
+        <span class="n">version</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">version</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; belum stabil&quot;</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">brand</span><span class="p">,</span><span class="n">version</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">brand</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">version</span><span class="si">}</span><span class="s2">&quot;</span>
+
+
+<span class="n">smartphone1</span> <span class="o">=</span> <span class="n">phone</span><span class="p">(</span><span class="s1">&#39;MIUI&#39;</span><span class="p">,</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">smartphone2</span> <span class="o">=</span> <span class="n">phone</span><span class="o">.</span><span class="n">infoDevice</span><span class="p">(</span><span class="s1">&#39;MIUI&#39;</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="n">smartphone1</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">smartphone2</span><span class="p">)</span>
+
+<span class="c1">#output: MIUI 12</span>
+<span class="c1">#        MIUI 11 belum stabil</span>
+</code></pre></div>
+
+<p>nah seperti itulah factory method, cukup keren bukan?</p>
 <p><br></p>
 <h5><strong>kesimpulan</strong></h5>
 <ul>
@@ -184,9 +249,8 @@ sama seperti variabel <code>self.power</code> kita bisa mengambilnya dengan <cod
 <a style="color:#80ED99" href="https://medium.com/ngulicode/method-class-method-dan-static-method-pada-python-1fa5feae4333">Here<a></p>
 <p><br></p>
 <h4>Penutup</h4>
-<p>Idk men ngerti ga ngerti saya itu emang gada bakat buat jelasin sesuatu,
-bingung nyusun materinya, bingung jelasin secara tersusun atau step by step.
-but! semoga kedepannya penyampaiannya bakalan lebih mudah dimengerti.</p>
+<p>Semoga artikel ini menambah wawasan kalian dan seperti biasa jika ada penyebutan yang salah maupun penjelasan yang kurang dapat dipahami, maklumi! yang nulis emang gada bakat buat jelasin sebuah pelajaran 😂 </p>
+<p>danke!</p>
 </div>
 </div>
 
