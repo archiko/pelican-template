@@ -4,12 +4,12 @@ body {     display: flex;
            flex-direction:column;
                 }
 
-#zetmono small,a,h1,h2,h3,h4,h5,h6,p { font-family: 'Azeret Mono', monospace;}
+#zetmono ul,li,small,a,h1,h2,h3,h4,h5,h6,p { font-family: 'Azeret Mono', monospace;}
 
 code {border-radius:3px}
 code {color:#80ED99;font-size:13px}
 
-p {font-size:14px}
+p,ul,li {font-size:14px}
 
 .typewriter {
 	display: inline-block;

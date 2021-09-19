@@ -2,7 +2,7 @@ Title: Cara bikin blog digithub pages dengan pelican
 Date: 6, Sep 2021.
 Tags: python, pelican, ssg
 Slug: blog/cara-bikin-blog-digithub-pages-dengan-pelican
-Author: Ardho Ainullah
+Author: Hiko
 
 Pelican adalah sebuah tool SSG (STATIC SITE GENERATOR) yang dibuat dengan bahasa python,right? oke, sebelum lebih jauh lebih baik kita mengenal apa itu ssg dulu.
 

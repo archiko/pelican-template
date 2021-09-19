@@ -2,7 +2,7 @@ Title: Membuat fungsi dengan Lambda Expression
 Date: 12, Sep 2021
 Tags: python, functions
 Slug: blog/membuat-fungsi-dengan-lambda-expression
-Author: Ardho Ainullah
+Author: Hiko
 
 
 Lambda expression secara garis besar menurut saya adalah

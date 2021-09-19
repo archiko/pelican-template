@@ -2,7 +2,7 @@ Title: Membuat sebuah grafik data diterminal dengan python
 Date: 10, sep 2021
 tags: python, tools, packages
 slug: blog/Membuat-sebuah-grafik-data-diterminal-dengan-python
-author: Ardho Ainullah
+author: Hiko
 
 
 Pernah terbesit atau terpikir buat nampilin grafik data atau chart diterminal?

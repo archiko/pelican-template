@@ -2,7 +2,7 @@ Title: mengenal komutatif dan asosiatif
 Date: 1, Sep 2021.
 Tags: math,
 Slug: blog/komutatif-dan-asosiatif-pada-matematika
-Author: Ardho Ainullah
+Author: Hiko
 
 ###### **Komutatif (pertukaran)**
 Singkatnya sifat komutatif itu adalah sebuah pertukaran dalam operasi hitung dalam dua buah bilangan,
