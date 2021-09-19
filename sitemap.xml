@@ -5,15 +5,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://archiko.my.id/</loc>
-<lastmod>2021-09-19T14:06:39-00:00</lastmod>
+<lastmod>2021-09-19T19:05:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://archiko.my.id/{slug}</loc>
-<lastmod>2021-09-19T14:06:39-00:00</lastmod>
+<lastmod>2021-09-19T19:05:17-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://archiko.my.id/blog/instance-method-class-method-dan-static-method</loc>
+<lastmod>2021-09-19T00:00:00+07:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -75,7 +82,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://archiko.my.id/category/blog.html</loc>
-<lastmod>2021-09-14T00:00:00+07:07</lastmod>
+<lastmod>2021-09-19T00:00:00+07:07</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -89,7 +96,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://archiko.my.id/author/hiko.html</loc>
-<lastmod>2021-09-12T00:00:00+07:07</lastmod>
+<lastmod>2021-09-19T00:00:00+07:07</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
