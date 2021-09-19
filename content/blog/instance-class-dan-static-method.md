@@ -2,7 +2,7 @@ Title: instance method, class method dan static method dipython
 Date: 19, Sep 2021
 Tags: python,oop
 Author: Hiko
-Slug: blog/instance-method-class-method-dan-static-method
+Slug: blog/instance-method-class-method-dan-static-method-dipython
 
 instance method itu adalah method yang ada didalam class ia menerima argumen `self` sebagai parameter pertamanya. yang mana nantinya akan berbeda dengan static method dan class method.
 
