@@ -1,4 +1,4 @@
-Title: instance method, class method dan static method
+Title: instance method, class method dan static method dipython
 Date: 19, Sep 2021
 Tags: python,oop
 Author: Hiko
