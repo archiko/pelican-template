@@ -6,8 +6,8 @@ SITENAME = 'Archives Hiko'
 SITEURL = ''
 
 
-ARTICLE_URL = "{slug}/"
-ARITCLE_SAVE_AS = "{slug}/"
+ARTICLE_URL = "/{slug}/"
+ARITCLE_SAVE_AS = "/{slug}/"
 TAG_URL = "/tag/{slug}"
 #TAG_SAVE_AS = "tag/{slug}"
 
@@ -58,7 +58,6 @@ PAGINATION_PATTERNS = (
 
 SITEMAP = {
     "format": "xml",
-    "exclude":['tag/'],
     "priorities": {
         "indexes": 0.5,
     },
