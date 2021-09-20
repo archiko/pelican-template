@@ -1,7 +1,13 @@
-<div class="container mt-4 p-2">
+<div class="container p-3 mt-5">
 {% if DEFAULT_PAGINATION %}
-<ul class="pagination btn btn-sm" >
+<ul class="pagination btn btn-sm justify-content-center" >
 
+
+        {% if articles_page.number == 1 %}
+        <li class="page-item disabled" ><a style="background:transparent" class="page-link" href="#">«</a></li>
+        {% else %}
+	<li class="page-item" ><a style="background:transparent;color:#80ED99;" class="page-link" href="{{URLSITE}}/{{page_name}}">«</a></li>
+        {% endif %}
 
         {% if articles_page.has_previous() %}
 		{% set num = articles_page.previous_page_number() %}
@@ -10,28 +16,25 @@
 	<li class="page-item disabled" ><a style="background:transparent;" class="page-link " href="#">Previous</a></li>
         {% endif %}
 
-	
-
-   	{% for n in range(1,1+articles_paginator.num_pages) %}
-        {% if articles_page.number == n %}
-        <li class="page-item disabled" ><span style="background:transparent;" class="page-link text-muted">{{n}}</span></li>
-        {% else %}
-	{% if articles_page.number == 1 %}
-        <li class="page-item"><a style="background:transparent;color:#80ED99;" class="page-link " href="{{URLSITE}}/blog/{{n}}">{{n}}</a></li>
-	{% else %}
-	<li class="page-item"><a style="background:transparent;color:#80ED99;" class="page-link " href="{{URLSITE}}/blog/">{{n}}</a></li>
-	{% endif %}
-        {% endif %}
-        {% endfor %}
-
+        	
         {% if articles_page.has_next() %}
         <li class="page-item" ><a style="background:transparent;color:#80ED99;" class="page-link" href="{{ SITEURL }}/{{ page_name }}/{{ articles_page.next_page_number() }}">Next</a></li>
 	{% else %}
 	<li class="page-item disabled"><a class="page-link text-muted" style="background:transparent" href="#">Next</a></li>
 	
         {% endif %}
+
+	{% if articles_paginator.num_pages == articles_page.number %}
+	<li class="page-item disabled" ><a style="background:transparent" class="page-link" href="#">»</a></li>
+	{% else %}
+	<li class="page-item" ><a style="background:transparent;color:#80ED99;" class="page-link" href="{{SITEURL}}/{{page_name}}/{{articles_paginator.num_pages }}">»</a></li>
+	{% endif %}
+
 	
 </ul>
+<div style="text-align:center">
+	<small class="text-white">Halaman {{articles_page.number}} dari 1 - {{articles_paginator.num_pages }}</small>
+</div>
 {% endif %}
 </div>
 

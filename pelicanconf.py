@@ -8,7 +8,7 @@ SITEURL = ''
 
 ARTICLE_URL = "{slug}"
 ARITCLE_SAVE_AS = "{slug}"
-TAG_URL = "tag/{slug}"
+TAG_URL = "/tag/{slug}"
 #TAG_SAVE_AS = "tag/{slug}"
 
 THEME = 'themes'
@@ -36,8 +36,7 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-#ACTIVE WHEN POSTS > 10
-#DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 7
 
 DEFAULT_METDADATA = {'Status':'draft'}
 FILENAME_METADATA = "(?P<title>)"
@@ -46,6 +45,7 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/thumb.webp':{'path':'thumb.webp'},
     'extra/CNAME':{'path':'CNAME'},
+    'extra/robots.txt':{'path':'robots.txt'},
 }
 
 
