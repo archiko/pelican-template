@@ -5,83 +5,83 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://archiko.my.id/</loc>
-<lastmod>2021-09-20T18:57:15-00:00</lastmod>
+<lastmod>2021-09-21T11:43:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://archiko.my.id//tag/{slug}</loc>
-<lastmod>2021-09-20T18:57:15-00:00</lastmod>
+<lastmod>2021-09-21T11:43:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://archiko.my.id//{slug}/</loc>
-<lastmod>2021-09-20T18:57:15-00:00</lastmod>
+<loc>https://archiko.my.id/{slug}</loc>
+<lastmod>2021-09-21T11:43:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://archiko.my.id//blog/instance-method-class-method-dan-static-method-dipython/</loc>
+<loc>https://archiko.my.id/blog/instance-method-class-method-dan-static-method-dipython</loc>
 <lastmod>2021-09-19T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://archiko.my.id//blog/konstruktor-init-dan-fungsi-self/</loc>
+<loc>https://archiko.my.id/blog/konstruktor-init-dan-fungsi-self</loc>
 <lastmod>2021-09-14T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://archiko.my.id//blog/Python-developer-roadmap/</loc>
+<loc>https://archiko.my.id/blog/Python-developer-roadmap</loc>
 <lastmod>2021-09-13T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://archiko.my.id//blog/membuat-fungsi-dengan-lambda-expression/</loc>
+<loc>https://archiko.my.id/blog/membuat-fungsi-dengan-lambda-expression</loc>
 <lastmod>2021-09-12T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://archiko.my.id//blog/Membuat-sebuah-grafik-data-diterminal-dengan-python/</loc>
+<loc>https://archiko.my.id/blog/Membuat-sebuah-grafik-data-diterminal-dengan-python</loc>
 <lastmod>2021-09-10T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://archiko.my.id//blog/cara-bikin-blog-digithub-pages-dengan-pelican/</loc>
+<loc>https://archiko.my.id/blog/cara-bikin-blog-digithub-pages-dengan-pelican</loc>
 <lastmod>2021-09-06T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://archiko.my.id//blog/fungsi-eval-dan-risikonya-pada-python/</loc>
+<loc>https://archiko.my.id/blog/fungsi-eval-dan-risikonya-pada-python</loc>
 <lastmod>2021-09-04T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://archiko.my.id//blog/mengenal-distributif/</loc>
+<loc>https://archiko.my.id/blog/mengenal-distributif</loc>
 <lastmod>2021-09-02T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://archiko.my.id//blog/komutatif-dan-asosiatif-pada-matematika/</loc>
+<loc>https://archiko.my.id/blog/komutatif-dan-asosiatif-pada-matematika</loc>
 <lastmod>2021-09-01T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
