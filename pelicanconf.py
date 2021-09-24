@@ -6,8 +6,8 @@ SITENAME = 'Archives Hiko'
 SITEURL = ''
 
 
-ARTICLE_URL = "{slug}"
-ARITCLE_SAVE_AS = "{slug}"
+ARTICLE_URL = "{slug}/"
+ARITCLE_SAVE_AS = "{slug}/index.html"
 TAG_URL = "/tag/{slug}"
 #TAG_SAVE_AS = "tag/{slug}"
 
