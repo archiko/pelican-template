@@ -5,21 +5,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://archiko.my.id/</loc>
-<lastmod>2021-09-24T06:49:11-00:00</lastmod>
+<lastmod>2021-09-24T07:15:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://archiko.my.id//tag/{slug}</loc>
-<lastmod>2021-09-24T06:49:11-00:00</lastmod>
+<lastmod>2021-09-24T07:15:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://archiko.my.id/{slug}</loc>
-<lastmod>2021-09-24T06:49:11-00:00</lastmod>
+<lastmod>2021-09-24T07:15:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
