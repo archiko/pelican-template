@@ -11,7 +11,11 @@
 
         {% if articles_page.has_previous() %}
 		{% set num = articles_page.previous_page_number() %}
-	<li class="page-item" ><a style="background:transparent;color:#80ED99;" class="page-link" href="{{ SITEURL }}/{{ page_name }}/{{ num if num > 1 else '' }}">Previous</a></li>
+		{% if num > 1 %}
+		<li class="page-item" ><a style="background:transparent;color:#80ED99;" class="page-link" href="{{ SITEURL }}/{{ page_name }}/{{num}}">Previous</a></li>
+		{% else %}
+		<li class="page-item" ><a style="background:transparent;color:#80ED99;" class="page-link"             href="{{ SITEURL }}/{{ page_name }}">Previous</a></li>
+		{% endif %}
 	{% else %}
 	<li class="page-item disabled" ><a style="background:transparent;" class="page-link " href="#">Previous</a></li>
         {% endif %}
