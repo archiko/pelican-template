@@ -58,7 +58,7 @@
 	<br><br>
         <span style="text-decoration:none;color:white"><h2><b>{{article.title}}</b></h2></span>
 	{% for tag in article.tags %}
-        <a href="{{URLSITE}}/{{tag.url}}"><small class="badge bg-dark" style="color:white">{{tag}}</small></a>
+        <a href="{{tag.url}}"><small class="badge bg-dark" style="color:white">{{tag}}</small></a>
 	{% endfor %}
 </div>
 <br>
