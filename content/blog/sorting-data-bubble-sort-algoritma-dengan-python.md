@@ -57,7 +57,7 @@ for n in range(len(arr))
 * kita looping buat dapetin item dari banyak isi item dari listnya
 
 ```python
-for i in range(len(arr - 1)):
+for i in range(len(arr) - 1):
 ```
 * mengubah pasangan terakhir dari item  yang berdekatan jadi (n-2,n-1).
 
